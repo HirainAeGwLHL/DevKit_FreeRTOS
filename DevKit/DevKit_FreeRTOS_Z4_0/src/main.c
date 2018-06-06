@@ -30,6 +30,7 @@
 #include "semphr.h"
 
 #include "bsp.h"
+#include "hw_platform.h"
 
 /* Standard demo includes. */
 
@@ -37,7 +38,8 @@
 #define mainLED_TASK_PRIORITY                ( tskIDLE_PRIORITY + 1 )
 
 
-void SystemInit(void);
+extern void SystemInit(void);
+
 void vLEDTask( void *pvParameters );
 
 
